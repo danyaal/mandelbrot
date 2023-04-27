@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # returns the iteration threshold that we check until
 def countIterationsUntilDivergent(c, threshold):
     z = complex(0, 0)
-    for iteration in xrange(threshold):
+    for iteration in range(threshold):
         z = (z*z) + c
 
         if abs(z) > 4:
@@ -30,8 +30,8 @@ def mandelbrot(threshold, density):
     atlas = np.empty((realAxisLen, imaginaryAxisLen))
 
     # color each point in the atlas depending on the iteration count
-    for ix in xrange(realAxisLen):
-        for iy in xrange(imaginaryAxisLen):
+    for ix in range(realAxisLen):
+        for iy in range(imaginaryAxisLen):
             cx = realAxis[ix]
             cy = imaginaryAxis[iy]
             c = complex(cx, cy)
