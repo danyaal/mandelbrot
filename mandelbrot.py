@@ -19,10 +19,10 @@ def countIterationsUntilDivergent(c, threshold):
 # create atlas, plot mandelbrot set, display set
 def mandelbrot(threshold, density):
     # location and size of the atlas rectangle
-    # realAxis = np.linspace(-2.25, 0.75, density)
-    # imaginaryAxis = np.linspace(-1.5, 1.5, density)
-    realAxis = np.linspace(-0.22, -0.219, 1000)
-    imaginaryAxis = np.linspace(-0.70, -0.699, 1000)
+    realAxis = np.linspace(-2.25, 0.75, density)
+    imaginaryAxis = np.linspace(-1.5, 1.5, density)
+    #realAxis = np.linspace(-0.22, -0.219, 1000)
+    #imaginaryAxis = np.linspace(-0.70, -0.699, 1000)
     realAxisLen = len(realAxis)
     imaginaryAxisLen = len(imaginaryAxis)
 
