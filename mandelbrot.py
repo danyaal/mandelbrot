@@ -1,6 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+try:
+    # Python 2
+    xrange
+except NameError:
+    # Python 3
+    xrange = range
+
 # counts the number of iterations until the function diverges or
 # returns the iteration threshold that we check until
 def countIterationsUntilDivergent(c, threshold):
